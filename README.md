@@ -1,3 +1,7 @@
+どうしてもforce buildする必要があったので、以下のrepo.をforkしてforce buildするようにしただけのものです。
+出来る限りoriginalの方を使った方が良いと思います。
+https://github.com/takahashim/review-pdf-generator-action
+
 # Re:VIEW PDF Generator Action
 
 This is a [GitHub Action](https://github.com/features/actions) for [Re:VIEW](https://github.com/kmuto/review) repository: builds PDF and uploads as Artifacts.
