@@ -14,7 +14,12 @@ if [ -e $INPUT_CONFIG_FILE ]; then
 else
     if [ -e $REVIEW_TEMPLATE_CONFIG_FILE ]; then
         echo "use npm"
-        bundle install && npm install && npm run pdf --force && \
+        echo "bundle install" && \
+        bundle install && \
+        echo "npm install" && \
+	npm install && \
+        echo "npm run pdf --force" && \
+	npm run pdf --force && \
         ruby /copy_build_file.rb $REVIEW_TEMPLATE_CONFIG_FILE && \
         echo "done."
     fi
